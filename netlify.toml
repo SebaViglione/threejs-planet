@@ -1,0 +1,4 @@
+[build]
+# No hay build real, pero copiamos src a public
+command = "mkdir -p public/src && cp -r src/* public/src/"
+publish = "public"

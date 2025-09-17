@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Planeta con Satélites
+        </title>
+        <link rel="stylesheet" href="../src/style.css">
+        <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/8635/8635653.png">
+        <!-- IMPORT MAP: debe ir ANTES del script type=module -->
+        <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+        </script>
+    </head>
+    <body>
+        <canvas id="scene"></canvas>
+        <!-- HUD de controles -->
+        <div id="controlsBox">
+            <h3>Controles</h3>
+            <ul>
+                <li>
+                    <b>Arrastrar mouse:</b>
+                    rotar cámara
+                </li>
+                <li>
+                    <b>Scroll:</b>
+                    zoom
+                </li>
+                <li>
+                    <b>Hover sobre satélite:</b>
+                    realce y animación
+                </li>
+                <li>
+                    <b>Órbitas:</b>
+                    inclinación y velocidad variables
+                </li>
+            </ul>
+        </div>
+        <script type="module" src="../src/main.js"></script>
+    </body>
+</html>
